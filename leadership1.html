@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First African Baptist Church | Leadership</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/modernizr.js"></script>
+</head>
+<body class="subpage">
+<div class="page-wrap" id="top">
+    <header>
+        <!-- Top Navigation -->
+        <div class="[ container ] nav-top">
+            <div class="[ row ] split end">
+                <div class="[ unit-30 ]">
+                    <p>First African Baptist Church &nbsp; | &nbsp; <em>Darby Township, Pennsylvania</em></p>
+                </div>
+                <div class="[ unit-20 ] img-link">
+                    <a href="https://www.biblegateway.com/" target="_blank"><img src="img/bible-gateway.png"
+                                                                                 alt=""/></a>
+                </div>
+                <div class="[ unit-50 ] right">
+                    <nav class="navbar fullwidth quick-links">
+                        <ul>
+                            <li><a href="">Top Links</a></li>
+                            <li><a href="">Top Links</a></li>
+                            <li><a href="">Top Links</a></li>
+                            <li><a href="">Top Links</a></li>
+                            <li><a href=""><!--<i class="sitemap icon"></i>--><i class="sidebar icon"></i></a></li>
+                            <li><a href=""><i class="sign in icon"></i></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <div class="[ container ] nav-main">
+            <div class="[ row ] end">
+                <div class="[ unit-25 ]">
+                    <a href="index-1.html" id="logo" class="logo">First African Baptist Church</a>
+                </div>
+
+                <div class="[ unit-65 ] right">
+                    <nav class="navbar fullwidth" role="navigation">
+                        <ul>
+                            <li><a class="active" href="">Leadership</a></li>
+                            <li><a href="ministries-3.html">Ministries</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="">News & Events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner-wrap" role="banner">
+
+        <div class="banner">
+            <div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0"
+                 data-stellar-offset-parent="true">
+                <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
+                <!--<img src="img/banner-img/banner-img-1.jpg" alt=""/>-->
+            </div>
+        </div>
+        <div class="content banner-head-wrap">
+            <div class="row banner-head">
+                <h1>Leadership</h1>
+            </div>
+        </div>
+    </div>
+    <main role="main">
+        <div class="[ container ] content-wrap centered-content">
+            <div class="row top">
+                <div class="unit-60 centered">
+                    <p>A accusantium animi architecto, blanditiis cumque dignissimos doloremque ducimus ea et eum fuga
+                        fugiat id inventore magnam magni mollitia neque nesciunt quae quam quidem rerum saepe totam
+                        ullam, veniam voluptatem! Dolor eveniet magnam molestiae necessitatibus suscipit vel voluptates.
+                        Consectetur consequatur corporis facilis harum impedit, inventore iure modi natus non quibusdam
+                        quisquam rem reprehenderit voluptas! Laboriosam natus neque quidem quod ullam?</span><span>Commodi dicta est expedita, illo quod tempore voluptates. Autem cupiditate error explicabo neque quos sint voluptatem. Cum iure labore minus odit porro? Amet deleniti deserunt esse, ex illum nam tenetur?</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="container inverted-wrap p-3" data-stellar-background-ratio="0.5"
+                data-stellar-vertical-offset="-200">
+            <div class="row">
+                <div class="unit-20">
+                    <h3>Site Menu</h3>
+                    <nav class="nav nav-stacked">
+                        <ul>
+                            <li><a href="">Leadership</a></li>
+                            <li><a href="">Ministries</a></li>
+                            <li><a href="">Our History</a></li>
+                            <li><a href="">News & Events</a></li>
+                            <li><a href="">Leadership</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="unit-40">
+                    <h3>Worship Times</h3>
+
+                    <p><strong>8:45 am</strong><br>
+                        Sunday School & Discipleship Class<br>
+                        <strong>9:45 am</strong><br>
+                        Morning Worship<br>
+                        <strong>First Sunday</strong><br>
+                        Holy Baptism, The Lord’s Supper<br>
+                        and the right hand of fellowship for new members</p>
+                </div>
+                <div class="unit-40">
+                    <h3>First African Baptist Church</h3>
+
+                    <p>901 Clifton Avenue<br>Sharon Hill, Pennsylvania 19079<br>
+                        Phone: 610.461.0350 or 6104610350<br>
+                        Office Fax: 610.461.4186<br>
+                        Email: <a href="mailto:fabc-joy@fabc.microsoftonline.com">FABC-Joy@fabc.microsoftonline.com</a>
+                    </p>
+                    <a href="http://n2ncdc.org/" target="_blank"><img src="img/neighbor-to-neighbor.png" alt=""/></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</div>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".banner").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1000,
+            arrows: false,
+            fade: true,
+            //lazyLoad: "progressive",
+            mobileFirst: true,
+            pauseOnDotsHover: false
+        });
+// On swipe event
+        $('.banner').on('swipe', function (event, slick, direction) {
+            console.log(direction);
+// left
+        });
+    });
+</script>
+<script src="js/jquery.stellar.min.js"></script>
+<script>
+    $(function () {
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 0,
+            parallaxBackgrounds: true,
+            hideDistantElements: true
+        });
+    });
+</script>
+<!--<script src="js/jquery.waypoints.min.js"></script>-->
+<!--<script src="js/sticky.js"></script>-->
+
+<!--<script>
+//    $(function(){ // document ready
+//        if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+//            var stickyTop = $('.sticky').offset().top; // returns number
+//            $(window).scroll(function(){ // scroll event
+//                var windowTop = $(window).scrollTop(); // returns number
+//                if (stickyTop < windowTop){
+//                    $('.sticky').css({ position: 'fixed', top: 0 });
+//                }
+//                else {
+//                    $('.sticky').css('position','static');
+//                }
+//            });
+//        }
+//    });
+
+
+var sticky = new Waypoint.Sticky({
+    element: $('.sticky')[0]
+});
+</script>-->
+<!--<script>
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 750);
+        });
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 800) {
+            $(".scroll.right").fadeIn();
+        } else {
+            $(".scroll.right").fadeOut();
+        }
+    });
+
+</script>-->
+
+</body>
+</html>
