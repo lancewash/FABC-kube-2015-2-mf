@@ -1,0 +1,66 @@
+/* =Headroom
+-----------------------------------------------------------------------------*/
+
+/*
+.headroom-pinned {
+  display: block;
+}
+.headroom-unpinned {
+  display: none;
+}
+.headroom {
+  transition: transform 200ms linear;
+}
+.headroom-pinned {
+  transform: translateY(0%);
+}
+.headroom-unpinned {
+  transform: translateY(-100%);
+}*/
+header {
+  transform: translateY(0);
+  -webkit-transition: all .75s ease-in-out;
+  -moz-transition: all .75s ease-in-out;
+  -ms-transition: all .75s ease-in-out;
+  -o-transition: all .75s ease-in-out;
+  transition: all .75s ease-in-out;
+  
+  &.header-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    
+    &.slide-reset {
+      top: -40px;
+      
+      &.headroom-top {
+        top: 0;
+      }
+    }
+  }
+}
+
+.slide-up .logo, .slide-reset .logo {
+  background: url("../img/fabc-joy-logo.png") no-repeat;
+  transform: translateY(0);
+
+}
+.slide-reset .logo {
+  background: url("../img/fabc-logo.png") no-repeat;
+
+}
+.headroom-not-top.slide-reset .logo {
+  background: url("../img/fabc-joy-logo.png") no-repeat;
+  height: 60px;
+  opacity: .75;
+
+  &:hover {
+    margin-top: 15px;
+    opacity: 1;
+  }
+}
+.slide-up {
+  top: -200px;
+  transform: translateY(-100%);
+}
