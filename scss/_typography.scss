@@ -17,7 +17,7 @@ a {
 }
 p>a {
 
-    //color: #BF3313;
+    color: rgba(255,255,255,.5);
     //display: inline-block;
     //background: linear-gradient(#BF3313, #BF3313) no-repeat;
     //background-size: 0 1px;
@@ -41,7 +41,7 @@ p>a {
             background: none;
             background-size: auto;
             background-position: inherit;
-            border-bottom: 1px solid #BF3313;
+            color: rgba(255,255,255,1);
             text-shadow: .05em 0 rgba(0,0,0,0.8), -.05em 0 rgba(0,0,0,0.8);
         }
     }

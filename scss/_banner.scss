@@ -16,7 +16,7 @@
   }
 }
 .banner {
-  height: 480px;
+  height: 550px;
   overflow: hidden;
 
 
@@ -41,7 +41,7 @@
   position: relative;
   top: -1px;
   width: 100%;
-  height: 480px;
+  height: 550px;
 
   &:hover .banner-head {
     bottom: 0;
@@ -52,7 +52,7 @@
   }
 }
 .banner-img {
-  height: 480px;
+  height: 550px;
   position: relative;
 
   /* h1, h2 {
@@ -296,17 +296,17 @@
 .banner-1 {
   background: url("../img/banner-img/banner-img-4.jpg") 0 0;
   //background-position: 0 0 !important;
-  height: 480px;
+  height: 550px;
 }
 .banner-2 {
   background: url("../img/banner-img/banner-img-3.jpg") 0 0;
   //background-position: 0 0 !important;
-  height: 480px;
+  height: 550px;
 }
 .banner-3 {
   background: url("../img/banner-img/banner-img-2.jpg") 0 0;
   //background-position: 0 0 !important;
-  height: 480px;
+  height: 550px;
 }
 /*
 ======================================
@@ -337,7 +337,7 @@ Slick Slider
   position: relative;
   overflow: hidden;
   display: block;
-  height: 480px;
+  height: 550px;
   margin: 0;
   padding: 0;
 
@@ -364,7 +364,7 @@ Slick Slider
   left: 0;
   top: 0;
   display: block;
-  height: 480px;
+  height: 550px;
 
   &:before,
   &:after {

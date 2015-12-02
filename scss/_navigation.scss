@@ -1,5 +1,47 @@
 /* =Navs
 -----------------------------------------------------------------------------*/
+/*header {
+    background: rgba(255,255,255,1);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-up {
+    top: -110px;
+}*/
+
+.logo {
+    background: url("../img/fabc-logo.png") no-repeat;
+    display: block;
+    height: 258px;
+    //left: 2em;
+    margin-top: 15px;
+    position: absolute;
+    text-indent: -999999em;
+    width: 212px;
+    z-index: 30;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -ms-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+        margin-top: 18px;
+    }
+
+    /*.nav-up & {
+        background: url("../img/fabc-joy-logo.png") no-repeat;
+    }
+    .nav-down & {
+        background: url("../img/fabc-joy-logo.png") no-repeat;
+    }*/
+}
+
 
 /* NavBar */
 .navbar {
@@ -271,6 +313,7 @@ Navigation Styles
 */
 .nav-top {
     //padding: .5em 0;
+    background: rgba(255,255,255,1);
     margin-top: 0;
 
     ul {
@@ -300,7 +343,7 @@ Navigation Styles
             i {
                 font-size: 1rem;
                 color: #000;
-                opacity: .55;
+                opacity: .75;
             }
         }
 
@@ -314,6 +357,7 @@ Navigation Styles
     }
 
     p, a, i {
+        color: rgba(0,0,0,.9);
         -webkit-transition: all 0.25s;
         -moz-transition: all 0.25s;
         -ms-transition: all 0.25s;
@@ -321,15 +365,40 @@ Navigation Styles
         transition: all 0.25s;
     }
     a i {
-        opacity: .25;
+        color: rgba(0,0,0,.9);
+        font-size: .9rem;
+        opacity: 1;
     }
-
+    //a {
+    //    background: rgba(0,0,0,.025);
+    //}
     a:hover {
-        background: rgba(0, 0, 0, .05);
+        background: rgba(0, 0, 0, .025);
         color: rgba(0,0,0,.75) !important;
 
         i {
             opacity: .5;
+        }
+    }
+    .nav-icon-wrap {
+        min-width: 280px;
+    }
+    .nav-icon {
+        border-right: 1px solid rgba(0,0,0,.05);
+        float: left;
+        //display: inline-block;
+        //float: right;
+        margin-bottom: 1px;
+        min-width: 100px;
+        text-align: center;
+        width: 25%;
+        padding: 0.5em 1rem 0.65em;
+
+        &:hover {
+            text-decoration: none;
+        }
+        &:first-child {
+            border-left: 1px solid rgba(0,0,0,.05);
         }
     }
 }
@@ -453,18 +522,28 @@ Navigation Styles
     .navbar {
         //margin-right: 1.5em;
         margin-bottom: 0;
+        //-webkit-transition: all .75s ease-in-out;
+        //-moz-transition: all .75s ease-in-out;
+        //-ms-transition: all .75s ease-in-out;
+        //-o-transition: all .75s ease-in-out;
+        //transition: all .75s ease-in-out;
     }
     [role=navigation]:hover a {
         opacity: .5;
-        -webkit-transition: all 0.75s;
-        -moz-transition: all 0.75s;
-        -ms-transition: all 0.75s;
-        -o-transition: all 0.75s;
-        transition: all 0.75s;
+        -webkit-transition: all .75s ease-in-out;
+        -moz-transition: all .75s ease-in-out;
+        -ms-transition: all .75s ease-in-out;
+        -o-transition: all .75s ease-in-out;
+        transition: all .75s ease-in-out;
 
         &:hover {
             color: rgba(255, 255, 255, 1);
             opacity: 1;
+            -webkit-transition: all .75s ease-in-out;
+            -moz-transition: all .75s ease-in-out;
+            -ms-transition: all .75s ease-in-out;
+            -o-transition: all .75s ease-in-out;
+            transition: all .75s ease-in-out;
         }
     }
 }
@@ -497,6 +576,11 @@ Navigation Styles
         text-transform: uppercase;
     }
 }
+
+
+
+
+
 .sticky {
     background: $colorBurgundy;
     //box-shadow: 0 5px 10px rgba(0,0,0,.2);
